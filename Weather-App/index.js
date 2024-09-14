@@ -7,7 +7,7 @@ function searchWeather() {
 async function getWeatherData(searchedCity) {
   try {
     let result = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${searchedCity}&units=metric&appid=8de5e9c39aafbc7b74ea212a574046ba`
+      `https://api.openweathermap.org/data/2.5/weather?q=${searchedCity}&units=metric&appid=${API_KEY}`
     );
     let weatherData = await result.json();
     displayWeatherMap(weatherData);
