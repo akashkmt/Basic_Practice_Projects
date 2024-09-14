@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="box">
+        <form id="allInputs" name="inputForm">
+            <input type="text" id="output" name="answer">
+        <!-- <div id="inputGrid"> -->
+            <input type="button" value="1" class="digit" onclick="inputForm.answer.value +='1' ">
+            <input type="button" value="2" class="digit" onclick="inputForm.answer.value +='2' ">
+            <input type="button" value="3" class="digit" onclick="inputForm.answer.value +='3' ">
+            <input type="button" value="+" class="signs" onclick="inputForm.answer.value +='+' ">
+            
+            <input type="button" value="4" class="digit" onclick="inputForm.answer.value +='4' ">
+            <input type="button" value="5" class="digit" onclick="inputForm.answer.value +='5' ">
+            <input type="button" value="6" class="digit" onclick="inputForm.answer.value +='6' ">
+            <input type="button" value="-" class="signs" onclick="inputForm.answer.value +='-' ">
+
+            <input type="button" value="7" class="digit" onclick="inputForm.answer.value +='7' ">
+            <input type="button" value="8" class="digit" onclick="inputForm.answer.value +='8' ">
+            <input type="button" value="9" class="digit" onclick="inputForm.answer.value +='9' ">
+            <input type="button" value="*" class="signs" onclick="inputForm.answer.value +='*' ">
+
+            <input type="button" value="C" id="clearAll" onclick="inputForm.answer.value = ' ' ">
+            <input type="button" value="0" class="digit" onclick="inputForm.answer.value +='0' ">
+            <input type="button" value="=" class="signs" onclick="inputForm.answer.value = eval(inputForm.answer.value) ">
+            <input type="button" value="/" class="signs" onclick="inputForm.answer.value +='/' ">
+        <!-- </div>     -->
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+h1 {
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+input {
+    width: 21%;
+    height: 3.4vw;
+    margin: 1%;
+}
+
+#output {
+    width: 91%;
+    margin-bottom: 3%;
+}
+
+#box {
+    width: 20%;
+    margin: auto;
+    padding: 3%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+#allInputs {
+    text-align: center;
+}
+
+.digit,
+.signs,
+#output,
+#clearAll {
+    font-weight: bold;
+    font-size: 1.1vw;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.7vw;
+}
+
+.signs {
+    color: white;
+    background-color: black;
+}
+
+#clearAll {
+    background-color: red;
+    color: white;
+}
