@@ -1,0 +1,66 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#checkoutData {
+    width: 400px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+#userData {
+    display: flex;
+
+    flex-direction: column;
+}
+
+#userData>input {
+    padding: 5px;
+    margin: 1%;
+}
+
+#userData>p {
+    margin: 1%;
+}
+
+#submitBtn {
+    width: 50%;
+    padding: 8px;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 100px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#divHeading {
+    text-align: center;
+    margin: 0%;
+    margin-bottom: 20px;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.navBtn {
+    margin: auto;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

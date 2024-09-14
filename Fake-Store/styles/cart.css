@@ -1,0 +1,76 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.navBtn {
+    margin: auto;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 2%;
+}
+
+.productImage {
+    width: 100%;
+    height: 300px;
+}
+
+.product {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.removeBtn {
+    border: none;
+    display: flex;
+    margin: auto;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+
+#total_coupon {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 2%;
+}
+
+#coupon {
+    margin: auto;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+#coupon>input,
+#coupon>button {
+    padding: 5px;
+}
