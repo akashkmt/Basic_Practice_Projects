@@ -1,0 +1,88 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMohR81Qnop7W4Y0VUvN9xQFpB1cwHQ9WW6RCiLH0YupZe383Wub0fcE_iYNGZiNpt-FQ&usqp=CAU);
+}
+
+#box {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+  gap: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span{
+    font-weight: bold;
+}
+
+#inputBox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#outputBox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#buttonDiv{
+    text-align: center;
+    margin: auto;
+}
+
+#translateBtn{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f7f7f7b3;
+    transition: transform .3s;
+}
+
+#translateBtn:hover{
+    cursor: pointer;
+    background-color: #f7f7f7d3;
+     transform: scale(1.1);
+}
+
+#inputText, #outputText{
+    padding: 15px;
+    outline: none;
+    font-size: 20px;
+    background-color: #f7f7f7b3;
+    border-radius: 5px;
+    border: none;
+}
+
+#inputLanguage, #outputLanguage{
+    outline: none;
+    background-color: #f7f7f7b3;
+}
+
+#inputLanguage::-webkit-scrollbar, #outputLanguage::-webkit-scrollbar{
+    width: 10px;
+}
+
+#inputLanguage::-webkit-scrollbar-track, #outputLanguage::-webkit-scrollbar-track{
+    background: white;
+}
+
+#inputLanguage::-webkit-scrollbar-thumb, #outputLanguage::-webkit-scrollbar-thumb{
+    background: rgb(169, 168, 168);
+}
+
+#inputLanguage::-webkit-scrollbar-thumb:hover, #outputLanguage::-webkit-scrollbar-thumb:hover{
+    background: rgb(169, 168, 168);
+}
