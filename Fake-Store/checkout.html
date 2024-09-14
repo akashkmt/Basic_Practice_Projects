@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./styles/checkout.css">
+</head>
+<body>
+    <div id="navBar">
+        <a class="navBtn" href="./index.html">Go to Homepage</a>
+        <h4 id="cartTotal"></h4>
+        <a class="navBtn" href="./cart.html">Go to Cart</a>
+    </div>
+    <div id="checkoutData">
+        <h3 id="divHeading">CHECKOUT</h3>
+        <form id="userData">
+            <p>Full Name :</p>
+            <input type="text" id="userName" placeholder="Enter Full Name">
+            <p>Email :</p>
+            <input type="email" id="userEmail" placeholder="Enter Email Address">
+            <p>Mobile Number :</p>
+            <input type="number" id="userNumber" placeholder="Enter Mobile Number">
+            <p>Address :</p>
+            <input type="text" id="userAddress" placeholder="Enter Your Full Address">
+            <button id="submitBtn">Proceed</button>
+        </form>
+    </div>
+
+    <script src="./scripts/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div id="navBar">
+        <h4 id="cart-counter"></h4>
+        <a id="cartBtn" href="./cart.html">Go to Cart</a>
+    </div>
+    <div id="sort">
+        <select name="sort" id="sortButton" onchange="filterProducts()">
+            <option value="">SORT</option>
+            <option value="ASC">Low to High</option>
+            <option value="DESC">High to Low</option>
+        </select>
+        <select name="filter" id="filterButton" onchange="filterProducts()">
+            <option value="">FILTER</option>
+            <option value="0-50">0-50</option>
+            <option value="51-100">51-100</option>
+            <option value="101-200">101-200</option>
+            <option value=">200">Greater than 200</option>
+        </select>
+    </div>
+    <div id="container">
+
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
