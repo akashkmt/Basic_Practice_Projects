@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Change Text Based On Input</title>
+  </head>
+  <body>
+    <div id="maincontainer">
+      <div id="text">Eat - Sleep - Code - Repeat</div>
+      <div id="inputwrapper">
+        <div>
+          <label class="inputlabel" for="inputbarsize">Size: </label>
+          <input
+            class="inputbar"
+            placeholder="Size here"
+            type="number"
+            id="inputbarsize"
+          />
+        </div>
+        <div>
+          <label class="inputlabel" for="inputbarcolor">Color: </label>
+          <input
+            class="inputbar"
+            placeholder="Color here"
+            type="text"
+            id="inputbarcolor"
+          />
+        </div>
+        <div>
+          <label class="inputlabel" for="inputbarweight">Weight: </label>
+          <input
+            class="inputbar"
+            placeholder="Weight here"
+            type="text"
+            id="inputbarweight"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let text = document.querySelector("#text");
+    let inputcolor = document.querySelector("#inputbarcolor");
+    let inputweight = document.querySelector("#inputbarweight");
+    let inputsize = document.querySelector("#inputbarsize");
+    inputcolor.addEventListener("input", () => {
+      text.style.color = inputcolor.value;
+    });
+    inputweight.addEventListener("input", () => {
+      if (inputweight.value) {
+        text.style.fontWeight = String(inputweight.value);
+      } else {
+        text.style.fontWeight = "bold";
+      }
+    });
+    inputsize.addEventListener("input", () => {
+      if (inputsize.value) {
+        text.style.fontSize = String(inputsize.value) + "px";
+      } else {
+        text.style.fontSize = "32px";
+      }
+    });
+  </script>
+</html>
